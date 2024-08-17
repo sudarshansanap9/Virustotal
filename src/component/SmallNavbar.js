@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './SmallNavbar.css'; // Create and import a separate CSS file for styling
+
 import UrlIcon from'./UrlIcon.png';
 import SearchIcon from './SearchIcon.png';
 
 
 
 const SmallNavbar = () => {
-  const [activeTab, setActiveTab] = useState('FILE');
+  const [activeTab, setActiveTab] = useState('URL');
 
   const handleTabClick = (tabName) => {
     setActiveTab(tabName);
@@ -16,6 +17,7 @@ const SmallNavbar = () => {
     <div className="container">
     <div className="navbar-container">
       <div className="navbar-tabs ">
+        
         <span
           className={`navbar-tab ${activeTab === 'URL' ? 'active' : ''}`}
           onClick={() => handleTabClick('URL')}
