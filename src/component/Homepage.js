@@ -13,7 +13,7 @@ export default function Homepage(props)  {
           <polygon points="16,32 0,64 32,64" fill="#0056D2" />
           <polygon points="32,0 32,32 0,32" fill="#0056D2" />
         </svg>
-        <h1 style={styles.title}>VIRUSTOTAL</h1>
+        <h1 style={styles.title}>Website Usability Using AI</h1>
       </div>
       <p style={styles.subtitle} className={`text-${props.mode === 'light' ? 'dark' : 'light'} `}>
         Analyse suspicious files, domains, IPs and URLs to detect malware and other breaches, 

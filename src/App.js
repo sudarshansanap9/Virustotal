@@ -31,7 +31,7 @@ function App() {
   }
   return (
     <>
-    <Navbar title="VIRUSTOTAL" mode={mode} toggleMode={toggleMode} />
+    <Navbar title="Website Usability Using AI" mode={mode} toggleMode={toggleMode} />
      <Homepage mode={mode}/>
      <SmallNavbar mode={mode}/>
     </>
