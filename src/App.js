@@ -3,6 +3,7 @@ import Homepage from './component/Homepage';
 import Navbar from './component/Navbar';
 import React, { useState } from 'react';
 import SmallNavbar from './component/SmallNavbar';
+import ChartComponent from './component/ChartComponent';
 
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
     <Navbar title="Website Usability Using AI" mode={mode} toggleMode={toggleMode} />
      <Homepage mode={mode}/>
      <SmallNavbar mode={mode}/>
+     <div className='text-center pt-3'><ChartComponent/></div>
+     
     </>
   );
 }

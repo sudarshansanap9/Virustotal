@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 export default function Navbar(props) {
   
   const getOffcanvasStyle = () => {
@@ -41,21 +42,7 @@ export default function Navbar(props) {
       </div>
       <div className="offcanvas-body" style={getOffcanvasStyle()}>
         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 ">
-        <ul className="navbar-nav me-auto  ">
-            <li className="nav-item d-flex flex-grow-1">
-              
-              <form className="d-flex mt-1" role="search">
-              <input
-      className="form-control me-2"
-      type="search"
-      placeholder="URL, IP address, domain or file hash"
-      aria-label="Search"
-      style={getResponsiveStyle()} />
-                <button className="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </li>
-          </ul>
-          
+        
             
             <li className="nav-item item">
               <div className={` mx-2 text-${props.mode === 'light' ? 'dark' : 'light'} mt-2`}>
